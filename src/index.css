@@ -1,0 +1,147 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  --spinner-animation-speed: 2s;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  animation: spin var(--spinner-animation-speed) linear infinite;
+}
+
+.card-saving{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+}
+
+#app{
+  background-color:#212228;
+  background-image: linear-gradient(#292a30 .1em, transparent .1em), linear-gradient(90deg, #292a30 .1em, transparent .1em);
+  background-size: 4em 4em;
+  height: 100vh;
+  position:relative;
+  overflow: auto;
+}
+
+.card{
+  width: 400px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  box-shadow:
+  0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075)
+;
+}
+
+.card-header {
+  background-color: #9bd1de;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.card-body{
+  padding: 1em;
+  border-radius: 0 0 5px 5px;
+
+}
+
+.card-body textarea{
+  background-color: inherit;
+  border: none;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-size: 16px;
+}
+
+
+
+
+textarea:focus{
+  background-color: inherit;
+  outline: none;
+  width: 100%;
+  height: 100%;
+
+}
+
+#controls{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+  position: fixed;
+  left:1em;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #35363e;
+  padding: 1em 1em;
+  border-radius: 40px;
+
+  box-shadow:
+  0 1px 1px hsl(0deg 0% 0% / 0.075),
+  0 2px 2px hsl(0deg 0% 0% / 0.075),
+  0 4px 4px hsl(0deg 0% 0% / 0.075),
+  0 8px 8px hsl(0deg 0% 0% / 0.075),
+  0 16px 16px hsl(0deg 0% 0% / 0.075)
+;
+z-index: 10000;
+}
+
+
+#add-btn{
+  background-color: rgba(107,107,107,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-btn:hover{
+  height: 45px;
+  width: 45px;
+}
+
+.color{
+
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.color:hover{
+  height: 45px;
+  width: 45px;
+}
