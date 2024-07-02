@@ -2,7 +2,7 @@
 
 Drag & Drop sticky notes App built with React JS and Appwite
 
-<video src="demo.mov" autoplay></video>
+<img src="demo.gif"/>
 
 ### Features
 
