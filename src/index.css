@@ -145,3 +145,52 @@ z-index: 10000;
   height: 45px;
   width: 45px;
 }
+
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  position: fixed;
+  z-index: 1400;
+  background-color: #F02D65;
+  box-shadow: 0 0 2px #d4d4d4;
+}
+
+#nprogress .peg {
+  right: 0;
+  opacity: 1;
+  width: 100px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  transform: rotate(3deg) translate(0px, -4px);
+  box-shadow: 0 0 10px #d4d4d4, 0 0 5px #d4d4d4;
+}
+
+.logout-btn {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  height: 45px;
+  width: 45px;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+  color: #F02D65;
+}
