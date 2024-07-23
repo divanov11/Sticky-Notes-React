@@ -15,7 +15,7 @@ export default function GuestGuard({ children }) {
   const { isAuthenticated, isInitialized } = useAuth();
 
   if (isAuthenticated) {
-    return <Navigate to='/app/myprofile' />;
+    return <Navigate to='/' />;
   }
 
   if (!isInitialized) {

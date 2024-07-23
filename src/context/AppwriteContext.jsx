@@ -88,7 +88,6 @@ function AuthProvider({ children }) {
           uid: user.$id,
           email: user.email,
           name: user.name,
-          roles: user.labels,
         });
         dispatch({
           type: "INITIALISE",
