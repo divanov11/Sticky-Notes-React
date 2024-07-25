@@ -1,4 +1,3 @@
-import React from "react";
 import Plus from "../icons/Plus";
 import colors from "../assets/colors.json";
 import { useRef } from "react";

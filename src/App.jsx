@@ -1,12 +1,9 @@
-import NotesPage from "./pages/NotesPage";
-import NotesProvider from "./context/NotesContext";
+import Router from './router';
 
 function App() {
     return (
         <div id="app">
-            <NotesProvider>
-                <NotesPage />
-            </NotesProvider>
+            <Router />    
         </div>
     );
 }
