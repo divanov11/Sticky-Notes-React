@@ -1,0 +1,17 @@
+services:
+  sticky-notes-app:
+    container_name: sticky-notes
+    image: sticky-notes-app:v1.0.0
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 4000:3000
+    networks:
+      - sticky-notes
+
+networks:
+  sticky-notes:
+    external: true
+    name: sticky-notes

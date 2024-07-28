@@ -1,0 +1,14 @@
+
+/node_modules/
+/dist/
+
+Dockerfile
+.env.example
+.dockerignore
+.eslintrc.cjs
+demo.gif
+demo.mov
+.gitignore
+.justfile
+compose.yaml
+
